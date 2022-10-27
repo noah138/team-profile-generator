@@ -3,7 +3,7 @@ const generateEngineer = (engineer) => {
     <div class="card shadow-lg rounded m-4" style="width: 18rem">
         <div class="card-header text-white bg-primary">
             <h2 class="card-title">${engineer.name}</h2>
-            <h2 class="card-title">&#xe112;${engineer.role}</h2>
+            <h2 class="card-title"><i class="fa-solid fa-glasses"></i> ${engineer.role}</h2>
         </div>
         <div class="card-body bg-light">
             <ul class="list-group">
@@ -21,7 +21,7 @@ const generateIntern = (intern) => {
     <div class="card shadow-lg rounded m-4" style="width: 18rem">
         <div class="card-header text-white bg-primary">
             <h2 class="card-title">${intern.name}</h2>
-            <h2 class="card-title">&#xe233;${intern.role}</h2>
+            <h2 class="card-title"><i class="fa-solid fa-user-graduate"></i> ${intern.role}</h2>
         </div>
         <div class="card-body bg-light">
             <ul class="list-group">
@@ -39,7 +39,7 @@ const generateManager = (manager) => {
     <div class="card shadow-lg rounded m-4" style="width: 18rem">
         <div class="card-header text-white bg-primary">
             <h2 class="card-title">${manager.name}</h2>
-            <h2 class="card-title">&#xe184;${manager.role}</h2>
+            <h2 class="card-title"><i class="fa-solid fa-mug-hot"></i> ${manager.role}</h2>
         </div>
         <div class="card-body bg-light">
             <ul class="list-group">
@@ -88,7 +88,7 @@ generateHTML = (teamCards) => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dream Team</title>
-        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a938701b8e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
 
@@ -100,9 +100,9 @@ generateHTML = (teamCards) => {
                 </div>
             </div>
         </div>
-        <div class="container container-fluid">
+        <div class="container">
             <div class="row">       
-                <div class="justify-content-center col-sm-6 col-md-4 col-lg-3 col-12">
+                <div class="justify-content-center row d-flex col-12">
                     ${teamCards}
                 </div>
             </div>

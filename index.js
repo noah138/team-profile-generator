@@ -13,8 +13,12 @@ const fs = require("fs");
 // Array to add employees to
 let teamArray = []
 
+// For each employee:
+// 1. Asks for name, id, email, github/office number/school
+// 2. Takes input and runs it through its respective employee class
+// 3. Pushes the created object into the team array
+
 // function for adding an engineer
-// asks for name, id, email, github
 function addEngineer() {
     inquirer.prompt([
         {
@@ -45,7 +49,6 @@ function addEngineer() {
 }
 
 // function for adding an intern
-// asks for name, id, email, school
 function addIntern() {
     inquirer.prompt([
         {
@@ -76,7 +79,6 @@ function addIntern() {
 }
 
 // function for adding an manager
-// asks for name, id, email, office number
 function addManager() {
     inquirer.prompt([
         {
@@ -106,6 +108,9 @@ function addManager() {
     })
 }
 
+// this function prompts to add an employee
+// it is returned to after each employee is added to the team array
+// the recursive loop is broken once no more employees are needed to be added
 function buildTeam() {
     inquirer.prompt([
         {
@@ -137,6 +142,7 @@ function buildTeam() {
         }
     })
 }
+
 
 const createPage = data => {
     fs.writeFile("./dist/output.html", data, err => {
