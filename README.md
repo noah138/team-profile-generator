@@ -18,7 +18,7 @@ Then install the inquirer npm package in your command line using the following c
 
 ` $ npm install `
 
-To install Jest to run the unit tests, type into your comman line:
+To install Jest to run the unit tests, type into your command line:
 
 ` $ npm install --save-dev jest `
 
@@ -29,6 +29,8 @@ Open the folder in integrated terminal by right clicking and selecting the drop 
 In the terminal run `npm test` to see if the test suite passes, and then run `node index.js` to start the program.
 
 You will then be prompted with a series of questions pertaining to the members of your team. This line of questioning will continue until you select 'No more employees to add'.
+
+Once the program is finished running, it will export your inputted data to the **output.html** file located in the **dist** folder. Right click on the file and select **Open in Default Browser** to view.
 
 [Click here to watch a demonstration](https://drive.google.com/file/d/1f5lnMv--6Cv21WOkP3DfvvABiAiDmRfr/view)
 
