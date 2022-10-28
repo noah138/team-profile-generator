@@ -1,7 +1,7 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "app to generate a team profile",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -13,15 +13,16 @@
     "type": "git",
     "url": "git+https://github.com/noah138/team-profile-generator.git"
   },
-  "author": "",
+  "author": "Noah Schwartz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/noah138/team-profile-generator/issues"
   },
   "homepage": "https://github.com/noah138/team-profile-generator#readme",
-  "dependencies": {
-    "init": "^0.1.2",
+  "devDependencies": {
     "jest": "^29.2.2"
   },
-  "keywords": []
+  "dependencies": {
+    "inquirer": "^8"
+  }
 }
